@@ -1,0 +1,295 @@
+*
+{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+main{
+    background-image: url(images/bg-pattern-top-mobile.svg), url(images/bg-pattern-bottom-mobile.svg);
+    background-repeat: no-repeat;
+    font-family: 'League Spartan', sans-serif, 'Montserrat', 'Roboto Condensed', sans-serif;
+    color: hsl(300, 43%, 22%);
+}
+
+.contenedor{
+    width: 85%;
+    display: flex;
+    flex-direction: column;
+    margin: 50px auto;
+    padding: 0 14px;
+    font-size: 15px;
+}
+
+.seccionUsers{
+    text-align: center;
+    line-height: 1.5;
+}
+
+.seccionUsers h1{
+    font-size: 28px;
+    font-weight: 700;
+    line-height: normal;
+    margin-bottom: 16px;
+}
+
+.seccionStarts{
+    margin-top: 32px;
+    text-align: center;
+    line-height: 1.5;
+    font-weight: 700;
+}
+
+.reportGuru{
+    margin: 16px 0;
+}
+
+.bestTech{
+    margin-bottom: 32px;
+}
+
+.seccionComents{
+    grid-area: coments;
+    display: grid;
+    grid-template-columns: 1fr;
+    grid-template-rows: repeat(3, 1fr)
+    "colton"
+    "irene"
+    "anne";
+    gap: 16px;
+    color: hsl(0, 0%, 100%);
+    font-size: 12px;
+    line-height: 1.5;
+}
+
+.seccionComents h2{
+    color: hsl(333, 80%, 67%);
+    font-size: 12px;
+}
+
+/* --------------------------------------- */
+ .colton{
+    grid-area: colton;
+    grid-row: 1/2;
+    grid-column: 1/2;
+    background-color: hsl(300, 43%, 22%);
+    padding: 18px;
+    border-radius: 6px;
+}
+
+.colton{
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+}
+
+.colton img{
+    width: 35px;
+    height: 35px;
+    border-radius: 50%;
+}
+
+.coltonTitulo{
+    display: flex;
+    flex-direction: column;
+    margin: 12px;    
+    font-size: 10px;
+}
+
+
+
+/* --------------------------------------- */
+.irene{
+    grid-area: irene;
+    grid-row: 2/3;
+    grid-column: 1/2;
+    background-color: hsl(300, 43%, 22%);
+    padding: 18px;
+    border-radius: 6px;
+}
+
+.irene{
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+}
+
+.irene img{
+    width: 35px;
+    height: 35px;
+    border-radius: 50%;
+}
+
+.ireneTitulo{
+    display: flex;
+    flex-direction: column;
+    margin: 12px;    
+    font-size: 10px;
+}
+
+/* --------------------------------------- */
+.anne{
+    grid-area: anne;
+    grid-row: 3/4;
+    grid-column: 1/2;
+    background-color: hsl(300, 43%, 22%);
+    padding: 18px;
+    border-radius: 6px;
+} 
+
+.anne{
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+}
+
+.anne img{
+    width: 35px;
+    height: 35px;
+    border-radius: 50%;
+}
+
+.anneTitulo{
+    display: flex;
+    flex-direction: column;
+    margin: 12px;    
+    font-size: 10px;
+}
+
+
+.attribution {
+    font-size: 11px;
+    text-align: center;
+  }
+  .attribution a {
+    color: hsl(228, 45%, 44%);
+  }
+
+  @media screen and (min-width: 769px){
+    main{
+        background-image: url(images/bg-pattern-top-desktop.svg), url(images/bg-pattern-bottom-desktop.svg);
+        background-repeat: no-repeat;
+    }
+
+    .contenedor{
+        width: 70%;
+        display: flex;
+        flex-direction: row;
+        flex-wrap: wrap;
+        justify-content: center;
+        align-items: center;
+        margin: 70px auto;    
+    }
+
+    .seccionUsers{
+        width: 50%;
+        padding: 0 100px 0 0;
+        text-align: left;
+        font-size: 18px;
+    }
+
+    .seccionUsers h1{
+        font-size: 45px;
+    }
+
+    .seccionStarts{
+        width: 50%;
+        font-size: 18px;
+        padding: 60px 0 0 0;
+        display: flex;
+        flex-direction: column;
+    }
+
+    .rate{
+        margin-left: 20px;
+    }
+
+    .review{
+        display: flex;
+        width: 80%;
+        background-color: hsl(300, 24%, 96%);
+        justify-content: flex-start;
+        align-items: center;
+        padding: 12px 8px;
+        border-radius: 5px;
+    }
+
+    .review{
+        align-self: flex-start;
+    }
+
+    .review img{
+        margin-right: 8px;
+        width: 18px;
+        height: 18px;
+    }
+
+    .reportGuru{
+        display: flex;
+        width: 80%;
+        background-color: hsl(300, 24%, 96%);
+        justify-content: center;
+        align-items: center;
+        padding: 12px 8px;
+        border-radius: 5px;
+    }
+    
+    .reportGuru{
+        align-self: center;
+    }
+
+    .reportGuru img{
+        margin-right: 8px;
+        width: 18px;
+        height: 18px;
+    }
+
+    .bestTech{
+        display: flex;
+        width: 80%;
+        background-color: hsl(300, 24%, 96%);
+        justify-content: center;
+        align-items: center;
+        padding: 12px 8px;
+        border-radius: 5px;
+        
+    }
+
+    .bestTech{
+        align-self: flex-end;
+    }
+
+    .bestTech img{
+        margin-right: 8px;
+        width: 18px;
+        height: 18px;
+    }
+    
+    .seccionComents{
+        width: 100%;
+        display: flex;
+        flex-direction: row;
+        justify-content: center;
+        margin: 30px 0;
+        font-size: 18px;
+        
+        min-height: 260px;
+    }
+
+    .colton{
+        align-self: flex-start;
+        padding: 20px;
+    }
+
+    .irene{
+        align-self: center;
+        margin: 0 20px;
+        padding: 20px;
+    }
+
+    .anne{
+        align-self: flex-end;
+        padding: 20px;
+    }
+
+}
